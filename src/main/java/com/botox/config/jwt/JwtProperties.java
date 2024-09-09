@@ -16,3 +16,4 @@ public class JwtProperties {
     private String secretKey;
 }
 
+
