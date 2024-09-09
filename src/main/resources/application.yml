@@ -2,13 +2,13 @@ spring:
   cache:
     type: redis
   profiles:
-    active: dev
+    active: ${SPRING_PROFILES_ACTIVE}
   data:
     redis:
-      host: 0.0.0.0
-      port: 6379
-      username: sa
-      password:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+      username: ${REDIS_USERNAME}
+      password: ${REDIS_PASSWORD}
   jpa:
     properties:
       hibernate:
@@ -21,26 +21,25 @@ spring:
       max-request-size: 10MB
 
 jwt:
-  issuer: kim11
-  secretKey: ff54dd1f64544befbeae0e43d1b9df54ff54dd1f64544befbeae0e43d1b9df54ff54dd1f64544befbeae0e43d1b9df54
+  issuer: ${JWT_ISSUER}
+  secretKey: ${JWT_SECRET_KEY}
 
 ---
-#application-dev.yml
 spring:
   config:
     activate:
       on-profile: dev
   datasource:
-    url: jdbc:mysql://localhost:3306/botox
-    username: root
-    password: 12345678
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:
-      host: 0.0.0.0
-      port: 6379
-      username: sa
-      password:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+      username: ${REDIS_USERNAME}
+      password: ${REDIS_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -49,9 +48,8 @@ spring:
         format_sql: true
         default_batch_fetch_size: 100
 
-# 로깅 기능 구현
 logging:
-  config: classpath:logback.xml # Logback 설정 파일 경로 추가
+  config: classpath:logback.xml
   level:
     test: warn
     org.springframework: DEBUG
@@ -61,8 +59,8 @@ logging:
     org.springframework.transaction: DEBUG
 
 jwt:
-  issuer: kim11
-  secretKey: ff54dd1f64544befbeae0e43d1b9df54ff54dd1f64544befbeae0e43d1b9df54ff54dd1f64544befbeae0e43d1b9df54
+  issuer: ${JWT_ISSUER}
+  secretKey: ${JWT_SECRET_KEY}
 
 cloud:
   aws:
@@ -77,7 +75,6 @@ cloud:
       auto: false
 
 ---
-#application-prod.yml
 spring:
   config:
     activate:
@@ -97,10 +94,10 @@ spring:
         default_batch_fetch_size: 100
   data:
     redis:
-      host: 0.0.0.0
-      port: 6379
-      username: sa
-      password:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+      username: ${REDIS_USERNAME}
+      password: ${REDIS_PASSWORD}
 
 logging:
   level:
@@ -112,8 +109,8 @@ logging:
     org.springframework: DEBUG
 
 jwt:
-  issuer: kim11
-  secretKey: ff54dd1f64544befbeae0e43d1b9df54ff54dd1f64544befbeae0e43d1b9df54ff54dd1f64544befbeae0e43d1b9df54
+  issuer: ${JWT_ISSUER}
+  secretKey: ${JWT_SECRET_KEY}
 
 cloud:
   aws:
