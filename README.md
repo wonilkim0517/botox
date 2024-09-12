@@ -1,7 +1,7 @@
 <p align="middle" >
   <img width="200px;" src="https://firebasestorage.googleapis.com/v0/b/fir-readme-storage.appspot.com/o/logo.jpg?alt=media&token=46aada62-533c-4ee0-8b0a-c454d033733f"/>
 </p>
-<h1 align="middle">리드미</h1>
+<h1 align="middle">Botox</h1>
 <h3 align="middle">당신을 위한 간편한 포트폴리오 제작 웹 서비스</h3>
 
 <br/>
