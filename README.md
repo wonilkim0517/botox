@@ -97,3 +97,5 @@
 | <img src="https://github.com/user-attachments/assets/206f2793-20b5-4fed-a80c-6d33d5460396" height="250"> | <img src="https://github.com/user-attachments/assets/b61d0958-86ec-461a-ac2f-9ded933728eb" height="250"> | <img src="https://github.com/user-attachments/assets/a163d910-d222-4a1d-a972-6b2898252a47" height="250"> | <img src="https://github.com/user-attachments/assets/7613baec-3a06-488c-9128-1375967fdc49" height="250"> |
 |                         [김원일](https://github.com/wonilkim0517)                     |                        [서영덕](https://github.com/asdfg6548)                          |                       [강건](https://github.com/IWBNN)                               |                     [신은섭](https://github.com/eunseopi)                            |
                  
+## 📝 프로젝트 회고록
+<img width="1720" alt="image" src="https://github.com/user-attachments/assets/3f9c56cd-9ef2-45ef-9777-a2ae26c1b112">
